@@ -59504,7 +59504,7 @@ s.push(B.NO)
 return s},
 axp(a,b){var s,r,q,p,o,n,m,l=this,k=null,j=l.a.fx,i=A.bK(a,B.lB),h=i==null?k:i.e
 if(h==null)h=B.aw
-if(j!==B.ah1)s=j===B.KP&&h===B.al
+if(j!==B.KP)s=j===B.ah1&&h===B.al
 else s=!0
 i=A.bK(a,B.Lw)
 i=i==null?k:i.as
@@ -119709,7 +119709,7 @@ var $async$p7=A.i(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:k=t.N
 j=t.K
 i=t.Mq
-h=B.H.hC(A.a6(["model","claude-haiku-4-5","max_tokens",1500,"messages",A.b([A.a6(["role","user","content",A.b([A.a6(["type","image","source",A.a6(["type","base64","media_type","image/jpeg","data",B.eD.gog().d7(a)],k,k)],k,j),A.a6(["type","text","text",'Analysiere das Foto eines Weinetiketts.\n\nAntworte AUSSCHLIESSLICH mit genau einem JSON-Objekt \u2014 keine Erkl\xe4rungen,\nkeinen Flie\xdftext, keinen Markdown-Zaun, keine weiteren Zeichen davor oder\ndanach. Verwende exakt diese Felder (unbekannte oder nicht erkennbare Werte\nals JSON null):\n\n{\n  "producer": string,\n  "name": string,\n  "vintage": number oder null,\n  "grape_varieties": string[],\n  "region": string oder null,\n  "country": string oder null,\n  "color": einer von "red", "white", "rose", "sparkling", "dessert", "other",\n  "abv": number oder null,\n  "drink_from": number oder null,\n  "drink_until": number oder null,\n  "storage_potential": string oder null,\n  "aroma_profile": string[],\n  "winery_portrait": string oder null,\n  "confidence": number zwischen 0 und 1\n}\n\nAlle Texte (storage_potential, aroma_profile, winery_portrait usw.) auf\nDeutsch formulieren. Wenn ein Feld nicht sicher erkennbar ist, setze es auf\nnull bzw. eine leere Liste statt zu raten. Gib "confidence" als deine\nEinsch\xe4tzung an, wie sicher du bei der Erkennung insgesamt bist.\n'],k,k)],i)],k,j)],i)],k,j),null)
+h=B.H.hC(A.a6(["model","claude-haiku-4-5","max_tokens",1500,"messages",A.b([A.a6(["role","user","content",A.b([A.a6(["type","image","source",A.a6(["type","base64","media_type","image/jpeg","data",B.eD.gog().d7(a)],k,k)],k,j),A.a6(["type","text","text",'Analysiere das Foto eines Weinetiketts.\n\nAntworte AUSSCHLIESSLICH mit genau einem JSON-Objekt - keine Erkl\xe4rungen,\nkeinen Flie\xdftext, keinen Markdown-Zaun, keine weiteren Zeichen davor oder\ndanach. Verwende exakt diese Felder:\n\n{\n  "producer": string,\n  "name": string,\n  "vintage": number oder null,\n  "grape_varieties": string[],\n  "region": string oder null,\n  "country": string oder null,\n  "color": einer von "red", "white", "rose", "sparkling", "dessert", "other",\n  "abv": number oder null,\n  "drink_from": number oder null,\n  "drink_until": number oder null,\n  "storage_potential": string oder null,\n  "aroma_profile": string[],\n  "winery_portrait": string oder null,\n  "confidence": number zwischen 0 und 1\n}\n\nZwei Arten von Feldern, unterschiedlich zu behandeln:\n\n1. ETIKETT-FAKTEN (producer, name, vintage, region, country, color, abv):\n   Nur vom Etikett ablesen bzw. sicher daraus ableiten (z. B. Rebsorte =>\n   color). Nicht Lesbares als null bzw. leere Liste - hier nicht raten.\n\n2. WEINWISSEN (grape_varieties falls nicht am Etikett, drink_from,\n   drink_until, storage_potential, aroma_profile, winery_portrait):\n   Sobald du den Wein, den Erzeuger oder zumindest Rebsorte/Region erkannt\n   hast, f\xfclle diese Felder AKTIV aus deinem Weinwissen - mit den fuer\n   diesen Wein bzw. diesen Weintyp typischen, fachlich fundierten Werten\n   (z. B. typisches Trinkfenster und Aromenprofil eines Blaufraenkisch aus\n   dem Burgenland; 2-3 Saetze zum Weingut, wenn du es kennst). Diese Felder\n   sollen nur dann null/leer sein, wenn der Wein gar nicht identifizierbar\n   ist. Kennzeichne groessere Unsicherheit ueber ein niedrigeres\n   "confidence", nicht durch Weglassen.\n\nAlle Texte (storage_potential, aroma_profile, winery_portrait usw.) auf\nDeutsch formulieren. Gib "confidence" als deine Einschaetzung an, wie\nsicher du bei der Erkennung insgesamt bist.\n'],k,k)],i)],k,j)],i)],k,j),null)
 g=A.bD()
 p=4
 e=g
@@ -131212,8 +131212,8 @@ B.afB=new A.A(!0,B.a9,null,".AppleSystemUIFont",null,null,null,null,null,null,nu
 B.afW=new A.A(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.i,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.ad4=new A.A(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.i,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.ah0=new A.fc(B.aeR,B.adN,B.aeS,B.afi,B.adt,B.adB,B.ae6,B.afd,B.aei,B.afE,B.acY,B.adf,B.afB,B.afW,B.ad4)
-B.KP=new A.a38(0,"system")
-B.ah1=new A.a38(2,"dark")
+B.ah1=new A.a38(0,"system")
+B.KP=new A.a38(2,"dark")
 B.a6G=new A.p(0.056,0.024)
 B.a6V=new A.p(0.108,0.3085)
 B.a6D=new A.p(0.198,0.541)
