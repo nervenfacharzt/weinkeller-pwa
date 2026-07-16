@@ -41,6 +41,26 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
+  <script>
+    // Auto-apply deployed updates: Flutter's service worker downloads a new
+    // app version in the background but keeps serving the old one until the
+    // next full reload - users had to reload twice to see deploys. When the
+    // new worker takes control, reload once automatically. The hadController
+    // guard skips the very first install (no old version to replace), and
+    // the sessionStorage flag prevents any reload loop.
+    if ('serviceWorker' in navigator) {
+      const hadController = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController) return;
+        if (sessionStorage.getItem('sw-reloaded') === '1') return;
+        sessionStorage.setItem('sw-reloaded', '1');
+        window.location.reload();
+      });
+      window.addEventListener('load', () => {
+        setTimeout(() => sessionStorage.removeItem('sw-reloaded'), 10000);
+      });
+    }
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
