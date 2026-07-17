@@ -29,3 +29,17 @@ self.addEventListener('activate', (event) => {
     })()
   );
 });
+
+// ---- takeover (appended by tool/deploy-pwa.sh) ----------------------
+// Activate freshly installed updates immediately and refresh open
+// clients once, instead of waiting for every window to close.
+self.addEventListener("install", () => self.skipWaiting());
+self.addEventListener("activate", (event) => {
+  event.waitUntil((async () => {
+    await self.clients.claim();
+    const windows = await self.clients.matchAll({ type: "window" });
+    for (const client of windows) {
+      try { await client.navigate(client.url); } catch (_) {}
+    }
+  })());
+});
