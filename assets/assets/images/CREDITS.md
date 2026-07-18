@@ -16,3 +16,9 @@
   golden vineyard rows by Spencer DeMera (unsplash.com/photos/IKMOdY6zB8w).
   `bg_settings.jpg` — wine corks (unsplash.com/photos/iYQC9xWMvw4).
   All Unsplash License (free commercial use), recompressed for bundling.
+
+- Portrait replacements (2026-07-18): `bg_stock.jpg` — grapes on the vine
+  (unsplash.com/photos/cRznm5agb9c). `bg_racks.jpg` — wine bottle wall by
+  Filipp Romanovski (unsplash.com/photos/iitpJMIRWQU). `bg_settings.jpg` —
+  red wine glass with grapes (unsplash.com/photos/IywM7AQTZcM).
+  Unsplash License, recompressed.
