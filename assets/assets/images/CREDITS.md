@@ -27,3 +27,10 @@
   bottle-figures mark with vertical script wordmark on parchment),
   AI-generated (Gemini) for this project, cropped from the logo styles
   sheet. Used on the dashboard header, boot splash, share card, loading spinner and as the source of all launcher/PWA icons.
+
+- `vinsieme_sketch_dark.png` / `vinsieme_sketch_dark_mark.png` — dark
+  variants of the "Organische Skizze" brand panel (cream sketch on a
+  TRANSPARENT ground; the full panel with vertical script wordmark +
+  "KELLER | TASTE | SOZIAL" slogan, and the bottle-pair mark alone),
+  AI-generated for this project (Paket 24). Used on the dashboard head's
+  dark glass box and as the loading spinner's fill motif.
