@@ -22,3 +22,8 @@
   Filipp Romanovski (unsplash.com/photos/iitpJMIRWQU). `bg_settings.jpg` —
   red wine glass with grapes (unsplash.com/photos/IywM7AQTZcM).
   Unsplash License, recompressed.
+
+- `vinsieme_sketch.jpg` — "Organische Skizze" brand panel (hand-sketched
+  bottle-figures mark with vertical script wordmark on parchment),
+  AI-generated (Gemini) for this project, cropped from the logo styles
+  sheet. Used on the dashboard header, boot splash, share card, loading spinner and as the source of all launcher/PWA icons.
