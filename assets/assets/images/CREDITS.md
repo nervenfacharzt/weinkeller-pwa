@@ -9,3 +9,10 @@
   (two embracing figures forming a wine bottle), AI-generated (Gemini) for
   this project, gold mark extracted and recomposed on the app's noir
   background. All launcher/PWA icons are derived from these masters.
+
+- `bg_racks.jpg` — wine barrels in a Santenay cellar by Jametlene Reskp
+  (unsplash.com/photos/nCqucqW7DAo). `bg_history.jpg` — wine glasses by
+  Faezeh Taheri (unsplash.com/photos/kKrVUsw0aQU). `bg_stock.jpg` —
+  golden vineyard rows by Spencer DeMera (unsplash.com/photos/IKMOdY6zB8w).
+  `bg_settings.jpg` — wine corks (unsplash.com/photos/iYQC9xWMvw4).
+  All Unsplash License (free commercial use), recompressed for bundling.
