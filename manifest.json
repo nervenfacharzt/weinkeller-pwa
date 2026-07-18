@@ -1,11 +1,11 @@
 {
-    "name": "Winesmoke Cellar",
-    "short_name": "Winesmoke",
+    "name": "Vinsieme",
+    "short_name": "Vinsieme",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Vinsieme - Weinkeller-Verwaltung: Bestand, Regale, Trinkfenster und Empfehlungen.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

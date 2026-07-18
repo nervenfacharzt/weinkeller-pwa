@@ -52,7 +52,7 @@ self.addEventListener("push", (event) => {
   let data = {};
   try { data = event.data ? event.data.json() : {}; } catch (_) {}
   event.waitUntil(self.registration.showNotification(
-    data.title || "Winesmoke Cellar",
+    data.title || "Vinsieme",
     {
       body: data.body || "",
       icon: "icons/Icon-192.png",
