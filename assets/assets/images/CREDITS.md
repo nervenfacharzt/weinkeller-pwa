@@ -34,3 +34,6 @@
   "KELLER | TASTE | SOZIAL" slogan, and the bottle-pair mark alone),
   AI-generated for this project (Paket 24). Used on the dashboard head's
   dark glass box and as the loading spinner's fill motif.
+
+- `assets/fonts/DancingScript.ttf` — Dancing Script (OFL) via Google Fonts,
+  used for the dashboard greeting to match the sketch wordmark's script.
