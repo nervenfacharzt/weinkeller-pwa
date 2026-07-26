@@ -143,6 +143,22 @@ th { color: var(--dim); font-weight: 600; }
 .group-title { margin: 34px 0 0; font-size: 15px; color: var(--dim);
                letter-spacing: 1.6px; text-transform: uppercase; }
 
+/* Übersicht der erfassten Weine: mehrere hundert Einträge, nach Herkunft
+   gruppiert. Mehrspaltig, damit die Seite nicht endlos scrollt. */
+.wine-index ul {
+  margin: 12px 0 4px; padding: 0; list-style: none;
+  columns: 2; column-gap: 34px;
+}
+@media (max-width: 560px) { .wine-index ul { columns: 1; } }
+.wine-index li {
+  margin: 0 0 8px; font-size: 15px;
+  break-inside: avoid;
+}
+.wine-index a { text-decoration: none; }
+.wine-index a:hover { text-decoration: underline; }
+.wine-index .dim { color: var(--dim); font-size: 13.5px; }
+.wine-index .group-title { margin-top: 30px; }
+
 /* ---- Weitere Seiten am Artikelende --------------------------------- */
 
 .more { margin-top: 40px; border-top: 1px solid var(--hair); padding-top: 18px; }
