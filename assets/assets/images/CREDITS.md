@@ -7,8 +7,12 @@
 
 - `vinsieme_mark.png` / `vinsieme_icon_1024.png` — Vinsieme brand mark
   (two embracing figures forming a wine bottle), AI-generated (Gemini) for
-  this project, gold mark extracted and recomposed on the app's noir
-  background. All launcher/PWA icons are derived from these masters.
+  this project, mark extracted and recomposed on the app's noir
+  background. `vinsieme_icon_1024.png` is the app-icon master: the sketch
+  mark from `vinsieme_sketch_dark_mark.png` recoloured to the sketch cream
+  `#EDE7DC` on a solid `kNoir` `#161519` ground, the motif at ~77% of the
+  edge length so round/squircle launcher masks cannot clip it. All
+  launcher/PWA icons are derived from that master.
 
 - `bg_racks.jpg` — wine barrels in a Santenay cellar by Jametlene Reskp
   (unsplash.com/photos/nCqucqW7DAo). `bg_history.jpg` — wine glasses by
@@ -26,7 +30,8 @@
 - `vinsieme_sketch.jpg` — "Organische Skizze" brand panel (hand-sketched
   bottle-figures mark with vertical script wordmark on parchment),
   AI-generated (Gemini) for this project, cropped from the logo styles
-  sheet. Used on the dashboard header, boot splash, share card, loading spinner and as the source of all launcher/PWA icons.
+  sheet. Used on the dashboard header, boot splash, share card and loading
+  spinner.
 
 - `vinsieme_sketch_dark.png` / `vinsieme_sketch_dark_mark.png` — dark
   variants of the "Organische Skizze" brand panel (cream sketch on a
