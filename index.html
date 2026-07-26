@@ -65,6 +65,7 @@
     font-size: 27px; letter-spacing: -.5px;
   }
   .brand .vin { color: var(--wine); }
+  .brand img { height: 52px; width: auto; display: block; }
   .topbar-actions { display: flex; gap: 10px; align-items: center; }
   .lang { color: var(--dim); font-size: 14px; text-decoration: none; }
 
@@ -76,7 +77,31 @@
   .btn-primary { background: var(--wine); color: #fff; }
   .btn-ghost { border: 1px solid rgba(237,231,220,.28); color: var(--bone); }
 
-  header.hero { padding: 62px 0 46px; }
+  /* Dieselbe Weinberg-Kulisse und dasselbe Sketch-Logo wie in der App —
+     wer von hier in die App wechselt, soll dasselbe Produkt sehen. Der
+     Farbverlauf darüber entspricht PhotoStage.overlay in
+     lib/src/ui/content_panel.dart. */
+  header.hero {
+    padding: 56px 0 50px;
+    position: relative;
+    background-image:
+      linear-gradient(180deg, rgba(22,21,25,.55) 0%, rgba(22,21,25,.78) 45%, var(--noir) 100%),
+      url('/vineyard.jpg');
+    background-size: cover;
+    background-position: center 42%;
+  }
+  .hero-grid {
+    display: grid; gap: 30px; align-items: center;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .hero-grid { grid-template-columns: 1.35fr .65fr; }
+  }
+  .hero-mark {
+    background: rgba(22,21,25,.55); border: 1px solid rgba(242,239,241,.10);
+    border-radius: 16px; padding: 16px; justify-self: start;
+  }
+  .hero-mark img { width: 100%; max-width: 210px; height: auto; display: block; }
   h1 { font-size: clamp(30px, 5.4vw, 46px); line-height: 1.18; font-weight: 700; }
   h1 .accent { color: var(--gold); }
   .sub { margin-top: 18px; font-size: clamp(16px, 2.3vw, 19px); color: var(--dim); max-width: 34em; }
@@ -106,6 +131,17 @@
   details summary { cursor: pointer; font-weight: 600; }
   details p { color: var(--dim); margin-top: 9px; font-size: 15px; }
 
+  /* Produktbilder: erzeugt von tool/render-screenshots.sh gegen einen
+     lokalen Build mit dem Beispielkeller — nicht von Hand nachbearbeitet,
+     damit sie zeigen, was die App tatsächlich zeigt. */
+  .shots { display: grid; gap: 16px; margin-top: 26px;
+           grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .shot img {
+    width: 100%; height: auto; display: block; border-radius: 14px;
+    border: 1px solid rgba(237,231,220,.12);
+  }
+  .shot p { margin-top: 9px; color: var(--dim); font-size: 14px; }
+
   footer { padding: 34px 0 54px; color: var(--dim); font-size: 14px;
            border-top: 1px solid rgba(237,231,220,.10); }
   footer a { color: var(--dim); }
@@ -115,6 +151,9 @@
 
 <div class="wrap">
   <div class="topbar">
+    <!-- In der Kopfzeile die Wortmarke, nicht das Bildlogo: das Sketch-Logo
+         ist hochformatig und wäre auf Zeilenhöhe geschrumpft unleserlich.
+         Es steht in voller Größe im Hero. -->
     <div class="brand"><span class="vin">vin</span>sieme</div>
     <div class="topbar-actions">
       <a class="lang" href="/welcome.html" hreflang="en">English</a>
@@ -125,23 +164,32 @@
 
 <header class="hero">
   <div class="wrap">
-    <h1>Du weißt, dass du ihn hast.<br><span class="accent">Nur nicht, wo.</span></h1>
-    <p class="sub">
-      Vinsieme ist eine Weinkeller-App für Menschen, die mehr Flaschen
-      besitzen als Gedächtnis: Etikett fotografieren, Platz im Regal
-      zuweisen, Trinkfenster im Blick behalten.
-    </p>
-    <div class="cta">
-      <a class="btn btn-primary" href="/app/">Ohne Anmeldung ausprobieren</a>
-      <a class="btn btn-ghost" href="/vinsieme.apk">Android-App laden</a>
+    <div class="hero-grid">
+      <div>
+        <h1>Du weißt, dass du ihn hast.<br><span class="accent">Nur nicht, wo.</span></h1>
+        <p class="sub">
+          Vinsieme ist eine Weinkeller-App für Menschen, die mehr Flaschen
+          besitzen als Gedächtnis: Etikett fotografieren, Platz im Regal
+          zuweisen, Trinkfenster im Blick behalten — und wenn Gäste kommen,
+          eine Verkostung daraus machen.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="/app/">Ohne Anmeldung ausprobieren</a>
+          <a class="btn btn-ghost" href="/vinsieme.apk">Android-App laden</a>
+        </div>
+        <p class="note">Kostenlos · keine Werbung · kein Tracking · funktioniert offline</p>
+      </div>
+      <div class="hero-mark">
+        <img src="/vinsieme-logo.png" width="480" height="664"
+             alt="Vinsieme — Keller, Taste, Sozial">
+      </div>
     </div>
-    <p class="note">Kostenlos · keine Werbung · kein Tracking · funktioniert offline</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Vier Dinge, die es einfacher machen</h2>
+    <h2>Fünf Dinge, die es einfacher machen</h2>
     <div class="features">
       <div class="feature">
         <span class="icon">📷</span>
@@ -167,17 +215,56 @@
         <p>Ladet euch gegenseitig ein und verwaltet einen Bestand gemeinsam.
            Entnimmt einer eine Flasche, sieht der andere es.</p>
       </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>Verkostung mit Gästen</h3>
+        <p>Stell eine Runde aus deinem Keller zusammen und teile einen Code:
+           alle bewerten am eigenen Telefon mit, blind als „Probe 1, 2, 3".
+           Nach dem Auflösen steht die Rangliste — als PDF exportierbar.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Was Vinsieme <em>nicht</em> ist</h2>
+    <h2>So sieht das aus</h2>
     <p class="lead">
-      Es gibt gute Wein-Apps. Sie lösen aber meist ein anderes Problem:
-      Wein <em>entdecken</em>. Vinsieme kümmert sich um den Wein, den du
-      schon gekauft hast.
+      Echte Aufnahmen aus der App — mit dem Beispielkeller, den du beim
+      ersten Start mitgeliefert bekommst.
+    </p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="/screens/de/02-start.jpg" width="780" height="1688" loading="lazy"
+             alt="Startseite von Vinsieme mit Flaschenzahl, trinkreifen Weinen und der Empfehlung des Tages">
+        <p>Beim Öffnen: wie viel liegt da, und was ist jetzt dran.</p>
+      </figure>
+      <figure class="shot">
+        <img src="/screens/de/04-regalplan.jpg" width="780" height="1688" loading="lazy"
+             alt="Regalübersicht in Vinsieme mit Belegungsanzeige eines Regals">
+        <p>Deine Regale mit ihrer tatsächlichen Belegung.</p>
+      </figure>
+      <figure class="shot">
+        <img src="/screens/de/05-wein.jpg" width="780" height="1688" loading="lazy"
+             alt="Weindetailseite in Vinsieme mit Aromenrad, Trinkfenster und Reifekurve">
+        <p>Jede Flasche mit Platz, Aromen und Trinkfenster.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Wie es sich zu anderen Wein-Apps verhält</h2>
+    <p class="lead">
+      Es gibt gute Wein-Apps. Die meisten lösen aber eine andere Frage:
+      <em>Welchen Wein soll ich kaufen?</em> Vinsieme beantwortet sie
+      ebenfalls — es recherchiert Bewertungen und Marktpreise, führt eine
+      Wunschliste und sagt dir, wann ein Preis gerade günstig ist. Der
+      Unterschied ist, dass es damit nicht aufhört: Es begleitet die Flasche
+      weiter, vom Kauf über den Regalplatz und das Trinkfenster bis zur
+      Verkostung mit Gästen. Diese Kette gibt es sonst nur verteilt über
+      mehrere Programme.
     </p>
     <div class="scroller">
       <table class="cmp">
@@ -192,7 +279,17 @@
           <td>Welchen Wein soll ich kaufen?</td>
         </tr>
         <tr>
+          <td>Kaufhilfe: Bewertungen, Marktpreise, Wunschliste</td>
+          <td>ja</td>
+          <td>ja, das ist ihre Stärke</td>
+        </tr>
+        <tr>
           <td>Regalplan mit echten Plätzen</td>
+          <td>ja</td>
+          <td>meist nein</td>
+        </tr>
+        <tr>
+          <td>Verkostung mit mehreren, blind und ausgewertet</td>
           <td>ja</td>
           <td>meist nein</td>
         </tr>
@@ -207,6 +304,28 @@
           <td>häufig</td>
         </tr>
       </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Zum Nachlesen</h2>
+    <p class="lead">
+      Texte zu den Fragen, die sich beim Lagern stellen — unabhängig davon,
+      womit du deinen Keller verwaltest.
+    </p>
+    <div class="features">
+      <div class="feature">
+        <h3><a href="/wissen/">Wissen rund um Weinlagerung</a></h3>
+        <p>Weinkeller anlegen, ohne Keller lagern, Trinkreife einschätzen,
+           Keller-Apps im Vergleich.</p>
+      </div>
+      <div class="feature">
+        <h3><a href="/wein/">Regionen und Rebsorten</a></h3>
+        <p>Kurzportraits von Wachau bis Bordeaux, von Grünem Veltliner bis
+           Nebbiolo — mit dem, was fürs Lagern zählt.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -251,6 +370,8 @@
     <p>
       <a href="/app/">App öffnen</a> ·
       <a href="/vinsieme.apk">Android-App</a> ·
+      <a href="/wissen/">Wissen</a> ·
+      <a href="/wein/">Regionen &amp; Rebsorten</a> ·
       <a href="/welcome.html" hreflang="en">English</a> ·
       <a href="/impressum.html">Impressum</a> ·
       <a href="/datenschutz.html">Datenschutz</a>

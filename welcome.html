@@ -65,6 +65,7 @@
     font-size: 27px; letter-spacing: -.5px;
   }
   .brand .vin { color: var(--wine); }
+  .brand img { height: 52px; width: auto; display: block; }
   .topbar-actions { display: flex; gap: 10px; align-items: center; }
   .lang { color: var(--dim); font-size: 14px; text-decoration: none; }
 
@@ -76,7 +77,31 @@
   .btn-primary { background: var(--wine); color: #fff; }
   .btn-ghost { border: 1px solid rgba(237,231,220,.28); color: var(--bone); }
 
-  header.hero { padding: 62px 0 46px; }
+  /* Dieselbe Weinberg-Kulisse und dasselbe Sketch-Logo wie in der App —
+     wer von hier in die App wechselt, soll dasselbe Produkt sehen. Der
+     Farbverlauf darüber entspricht PhotoStage.overlay in
+     lib/src/ui/content_panel.dart. */
+  header.hero {
+    padding: 56px 0 50px;
+    position: relative;
+    background-image:
+      linear-gradient(180deg, rgba(22,21,25,.55) 0%, rgba(22,21,25,.78) 45%, var(--noir) 100%),
+      url('/vineyard.jpg');
+    background-size: cover;
+    background-position: center 42%;
+  }
+  .hero-grid {
+    display: grid; gap: 30px; align-items: center;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .hero-grid { grid-template-columns: 1.35fr .65fr; }
+  }
+  .hero-mark {
+    background: rgba(22,21,25,.55); border: 1px solid rgba(242,239,241,.10);
+    border-radius: 16px; padding: 16px; justify-self: start;
+  }
+  .hero-mark img { width: 100%; max-width: 210px; height: auto; display: block; }
   h1 { font-size: clamp(30px, 5.4vw, 46px); line-height: 1.18; font-weight: 700; }
   h1 .accent { color: var(--gold); }
   .sub { margin-top: 18px; font-size: clamp(16px, 2.3vw, 19px); color: var(--dim); max-width: 34em; }
@@ -106,6 +131,17 @@
   details summary { cursor: pointer; font-weight: 600; }
   details p { color: var(--dim); margin-top: 9px; font-size: 15px; }
 
+  /* Produktbilder: erzeugt von tool/render-screenshots.sh gegen einen
+     lokalen Build mit dem Beispielkeller — nicht von Hand nachbearbeitet,
+     damit sie zeigen, was die App tatsächlich zeigt. */
+  .shots { display: grid; gap: 16px; margin-top: 26px;
+           grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .shot img {
+    width: 100%; height: auto; display: block; border-radius: 14px;
+    border: 1px solid rgba(237,231,220,.12);
+  }
+  .shot p { margin-top: 9px; color: var(--dim); font-size: 14px; }
+
   footer { padding: 34px 0 54px; color: var(--dim); font-size: 14px;
            border-top: 1px solid rgba(237,231,220,.10); }
   footer a { color: var(--dim); }
@@ -115,6 +151,9 @@
 
 <div class="wrap">
   <div class="topbar">
+    <!-- In der Kopfzeile die Wortmarke, nicht das Bildlogo: das Sketch-Logo
+         ist hochformatig und wäre auf Zeilenhöhe geschrumpft unleserlich.
+         Es steht in voller Größe im Hero. -->
     <div class="brand"><span class="vin">vin</span>sieme</div>
     <div class="topbar-actions">
       <a class="lang" href="/" hreflang="de">Deutsch</a>
@@ -125,23 +164,32 @@
 
 <header class="hero">
   <div class="wrap">
-    <h1>You know you have it.<br><span class="accent">Just not where.</span></h1>
-    <p class="sub">
-      Vinsieme is a wine cellar app for people who own more bottles than
-      memory: photograph the label, give it a slot in the rack, keep its
-      drinking window in view.
-    </p>
-    <div class="cta">
-      <a class="btn btn-primary" href="/app/">Try it without signing up</a>
-      <a class="btn btn-ghost" href="/vinsieme.apk">Get the Android app</a>
+    <div class="hero-grid">
+      <div>
+        <h1>You know you have it.<br><span class="accent">Just not where.</span></h1>
+        <p class="sub">
+          Vinsieme is a wine cellar app for people who own more bottles than
+          memory: photograph the label, give it a slot in the rack, keep its
+          drinking window in view — and when guests come round, turn it into
+          a tasting.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="/app/">Try it without signing up</a>
+          <a class="btn btn-ghost" href="/vinsieme.apk">Get the Android app</a>
+        </div>
+        <p class="note">Free · no ads · no tracking · works offline</p>
+      </div>
+      <div class="hero-mark">
+        <img src="/vinsieme-logo.png" width="480" height="664"
+             alt="Vinsieme — cellar, taste, social">
+      </div>
     </div>
-    <p class="note">Free · no ads · no tracking · works offline</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Four things that make it easier</h2>
+    <h2>Five things that make it easier</h2>
     <div class="features">
       <div class="feature">
         <span class="icon">📷</span>
@@ -167,17 +215,55 @@
         <p>Invite each other and manage one stock together. When one of you
            takes a bottle out, the other sees it.</p>
       </div>
+      <div class="feature">
+        <span class="icon">🍷</span>
+        <h3>A tasting with guests</h3>
+        <p>Put together a flight from your own cellar and share a code:
+           everyone scores along on their own phone, blind, as “sample 1, 2,
+           3”. Once you reveal, the ranking is there — exportable as a PDF.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>What Vinsieme is <em>not</em></h2>
+    <h2>What it looks like</h2>
     <p class="lead">
-      There are good wine apps. Most of them solve a different problem:
-      <em>discovering</em> wine. Vinsieme looks after the wine you have
-      already bought.
+      Real captures from the app — using the example cellar that comes with
+      it the first time you open it.
+    </p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="/screens/en/02-start.jpg" width="780" height="1688" loading="lazy"
+             alt="Vinsieme home screen with bottle count, wines ready to drink and the pick of the day">
+        <p>On opening: how much is down there, and what is ready now.</p>
+      </figure>
+      <figure class="shot">
+        <img src="/screens/en/04-regalplan.jpg" width="780" height="1688" loading="lazy"
+             alt="Rack overview in Vinsieme showing how full a rack is">
+        <p>Your racks, with what is actually in them.</p>
+      </figure>
+      <figure class="shot">
+        <img src="/screens/en/05-wein.jpg" width="780" height="1688" loading="lazy"
+             alt="Wine detail page in Vinsieme with aroma wheel, drinking window and maturity curve">
+        <p>Every bottle with its slot, aromas and drinking window.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How it compares to other wine apps</h2>
+    <p class="lead">
+      There are good wine apps. Most of them answer a different question:
+      <em>which wine should I buy?</em> Vinsieme answers that one too — it
+      researches ratings and market prices, keeps a wishlist and tells you
+      when a price is currently a good one. The difference is that it does
+      not stop there: it stays with the bottle, from the purchase through
+      its slot in the rack and its drinking window to a tasting with guests.
+      Elsewhere that chain only exists spread across several programmes.
     </p>
     <div class="scroller">
       <table class="cmp">
@@ -192,7 +278,17 @@
           <td>Which wine should I buy?</td>
         </tr>
         <tr>
+          <td>Buying help: ratings, market prices, wishlist</td>
+          <td>yes</td>
+          <td>yes, that is their strength</td>
+        </tr>
+        <tr>
           <td>Rack plan with real slots</td>
+          <td>yes</td>
+          <td>usually no</td>
+        </tr>
+        <tr>
+          <td>Tasting with several people, blind and scored</td>
           <td>yes</td>
           <td>usually no</td>
         </tr>
@@ -207,6 +303,28 @@
           <td>common</td>
         </tr>
       </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Further reading</h2>
+    <p class="lead">
+      Writing on the questions that come up once you start keeping wine —
+      whatever you use to manage your cellar.
+    </p>
+    <div class="features">
+      <div class="feature">
+        <h3><a href="/guides/">Guides to storing and ageing wine</a></h3>
+        <p>Setting up a cellar, storing without one, judging drinking
+           windows, cellar apps compared.</p>
+      </div>
+      <div class="feature">
+        <h3><a href="/wine/">Regions and grape varieties</a></h3>
+        <p>Short portraits from the Wachau to Bordeaux, from Grüner
+           Veltliner to Nebbiolo — focused on what matters for keeping.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -250,6 +368,8 @@
     <p>
       <a href="/app/">Open the app</a> ·
       <a href="/vinsieme.apk">Android app</a> ·
+      <a href="/guides/">Guides</a> ·
+      <a href="/wine/">Regions &amp; varieties</a> ·
       <a href="/" hreflang="de">Deutsch</a> ·
       <a href="/impressum.html">Imprint</a> ·
       <a href="/datenschutz.html">Privacy</a>

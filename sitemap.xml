@@ -3,20 +3,298 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://vinsieme.app/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/welcome.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/"/>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vinsieme.app/welcome.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/welcome.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/"/>
-    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url><loc>https://vinsieme.app/impressum.html</loc><priority>0.2</priority></url>
-  <url><loc>https://vinsieme.app/datenschutz.html</loc><priority>0.2</priority></url>
+  <url>
+    <loc>https://vinsieme.app/impressum.html</loc>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/datenschutz.html</loc>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wissen/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/blaufrankisch-aging.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wissen/wein-lagern-ohne-keller.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/wein-lagern-ohne-keller.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/storing-wine-without-a-cellar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/wein-lagern-ohne-keller.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wissen/weinkeller-anlegen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/weinkeller-anlegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/setting-up-a-wine-cellar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/weinkeller-anlegen.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wissen/weinkeller-app-vergleich.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/weinkeller-app-vergleich.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/wine-cellar-apps-compared.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/weinkeller-app-vergleich.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/setting-up-a-wine-cellar.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/weinkeller-anlegen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/setting-up-a-wine-cellar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/weinkeller-anlegen.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/storing-wine-without-a-cellar.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/wein-lagern-ohne-keller.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/storing-wine-without-a-cellar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/wein-lagern-ohne-keller.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/blaufrankisch-aging.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/blaufrankisch-aging.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/wine-cellar-apps-compared.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/weinkeller-app-vergleich.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/wine-cellar-apps-compared.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/weinkeller-app-vergleich.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/barolo-barbaresco.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/barolo-barbaresco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/barolo-barbaresco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/barolo-barbaresco.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/blaufraenkisch.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/blaufraenkisch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/blaufrankisch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/blaufraenkisch.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/bordeaux.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/bordeaux.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/bordeaux.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/bordeaux.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/burgenland.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/burgenland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/burgenland.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/burgenland.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/chianti-classico.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/chianti-classico.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/chianti-classico.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/chianti-classico.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/gruener-veltliner.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/gruener-veltliner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/gruner-veltliner.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/gruener-veltliner.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/kamptal.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/kamptal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/kamptal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/kamptal.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/nebbiolo.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/nebbiolo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/nebbiolo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/nebbiolo.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/pinot-noir.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/pinot-noir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/pinot-noir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/pinot-noir.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/riesling.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/riesling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/riesling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/riesling.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/sangiovese.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/sangiovese.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/sangiovese.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/sangiovese.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/suedsteiermark.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/suedsteiermark.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/south-styria.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/suedsteiermark.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/wachau.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/wachau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/wachau.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/wachau.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wein/zweigelt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/zweigelt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/zweigelt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/zweigelt.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/barolo-barbaresco.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/barolo-barbaresco.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/barolo-barbaresco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/barolo-barbaresco.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/blaufrankisch.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/blaufraenkisch.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/blaufrankisch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/blaufraenkisch.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/bordeaux.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/bordeaux.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/bordeaux.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/bordeaux.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/burgenland.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/burgenland.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/burgenland.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/burgenland.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/chianti-classico.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/chianti-classico.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/chianti-classico.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/chianti-classico.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/gruner-veltliner.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/gruener-veltliner.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/gruner-veltliner.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/gruener-veltliner.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/kamptal.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/kamptal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/kamptal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/kamptal.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/nebbiolo.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/nebbiolo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/nebbiolo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/nebbiolo.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/pinot-noir.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/pinot-noir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/pinot-noir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/pinot-noir.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/riesling.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/riesling.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/riesling.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/riesling.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/sangiovese.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/sangiovese.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/sangiovese.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/sangiovese.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/south-styria.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/suedsteiermark.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/south-styria.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/suedsteiermark.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/wachau.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/wachau.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/wachau.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/wachau.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wine/zweigelt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wein/zweigelt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wine/zweigelt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wein/zweigelt.html"/>
+    <priority>0.6</priority>
+  </url>
 </urlset>

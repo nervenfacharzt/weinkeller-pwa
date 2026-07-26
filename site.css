@@ -1,0 +1,155 @@
+/* Vinsieme — shared stylesheet for the generated content pages
+   (/wissen, /guides, /wein, /wine). The two landing pages keep their CSS
+   inline on purpose: they are the pages a first-time visitor and every
+   link-preview scraper hits, and an extra blocking request there costs
+   more than the duplication saves.
+
+   Colour names mirror lib/src/ui/theme.dart so the site and the app stay
+   recognisably the same product. */
+:root {
+  --noir: #161519;
+  --card: #232227;
+  --bone: #EDE7DC;
+  --wine: #D64B5E;
+  --gold: #E2B457;
+  --dim: rgba(237, 231, 220, .62);
+  --hair: rgba(237, 231, 220, .10);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--noir);
+  color: var(--bone);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 22px; }
+a { color: var(--gold); }
+
+/* ---- Kopf- und Fußzeile ------------------------------------------- */
+
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--hair);
+  flex-wrap: wrap;
+}
+.brand {
+  font-family: Georgia, 'Times New Roman', serif; font-style: italic;
+  font-size: 25px; letter-spacing: -.5px; color: var(--bone);
+  text-decoration: none;
+}
+.brand .vin { color: var(--wine); }
+.topbar-actions { display: flex; gap: 12px; align-items: center; }
+.lang { color: var(--dim); font-size: 14px; text-decoration: none; }
+
+.btn {
+  display: inline-block; padding: 11px 20px; border-radius: 999px;
+  font-weight: 600; text-decoration: none; font-size: 15px; white-space: nowrap;
+}
+.btn-primary { background: var(--wine); color: #fff; }
+.btn-ghost { border: 1px solid rgba(237, 231, 220, .28); color: var(--bone); }
+
+footer {
+  margin-top: 54px; padding: 30px 0 54px;
+  color: var(--dim); font-size: 14px; border-top: 1px solid var(--hair);
+}
+footer a { color: var(--dim); }
+
+/* ---- Fließtext ------------------------------------------------------ */
+
+article { padding: 40px 0 10px; }
+
+.crumb { font-size: 13.5px; color: var(--dim); margin-bottom: 18px; }
+.crumb a { color: var(--dim); }
+
+h1 { font-size: clamp(27px, 4.6vw, 38px); line-height: 1.22; font-weight: 700; }
+h2 {
+  font-size: clamp(19px, 2.7vw, 24px); font-weight: 650;
+  margin: 38px 0 12px; line-height: 1.3;
+}
+h3 { font-size: 17px; font-weight: 650; margin: 24px 0 8px; }
+
+.meta { margin-top: 14px; font-size: 13.5px; color: var(--dim); }
+.standfirst { margin-top: 18px; font-size: 18px; color: var(--dim); }
+
+article p { margin-top: 14px; }
+article ul, article ol { margin: 14px 0 14px 22px; }
+article li { margin-top: 7px; }
+article strong { color: var(--bone); font-weight: 650; }
+article em { color: var(--bone); }
+
+blockquote {
+  margin: 22px 0; padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--wine); color: var(--dim);
+}
+
+/* Tabellen sind auf Telefonen der häufigste Grund für seitliches
+   Scrollen der ganzen Seite — deshalb scrollt der Container, nie body. */
+.scroller { overflow-x: auto; margin-top: 18px; }
+table {
+  width: 100%; border-collapse: collapse; font-size: 15px;
+  min-width: 420px;
+}
+th, td {
+  text-align: left; padding: 10px 10px;
+  border-bottom: 1px solid var(--hair); vertical-align: top;
+}
+th { color: var(--dim); font-weight: 600; }
+
+/* Faktenkasten für Regionen-/Rebsortenseiten. */
+.facts {
+  background: var(--card); border-radius: 14px; padding: 18px 20px;
+  margin-top: 24px;
+}
+.facts h2 { margin-top: 0; font-size: 16px; }
+.facts dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; }
+.facts dt { color: var(--dim); font-size: 14.5px; }
+.facts dd { font-size: 14.5px; }
+
+/* Hinweis, dass Reifeangaben Schätzungen sind — steht auf jeder
+   Rebsorten-/Regionenseite, weil die App dort ebenfalls schätzt. */
+.caveat {
+  margin-top: 26px; padding: 14px 16px; border-radius: 12px;
+  background: rgba(226, 180, 87, .08); border: 1px solid rgba(226, 180, 87, .22);
+  font-size: 14.5px; color: var(--dim);
+}
+
+/* Produkthinweis am Artikelende — als Kasten abgesetzt, damit klar ist,
+   wo der redaktionelle Text aufhört. */
+.pitch {
+  margin-top: 40px; background: var(--card); border-radius: 16px; padding: 22px;
+}
+.pitch h2 { margin-top: 0; }
+.pitch p { color: var(--dim); }
+.pitch .cta { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ---- Übersichtsseiten ---------------------------------------------- */
+
+.index-head { padding: 46px 0 6px; }
+.index-head .lead { margin-top: 16px; color: var(--dim); max-width: 40em; }
+
+.cards { display: grid; gap: 14px; margin: 28px 0 10px;
+         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.cards a.card {
+  background: var(--card); border-radius: 16px; padding: 20px;
+  text-decoration: none; color: var(--bone); display: block;
+}
+.cards .card h2 { font-size: 17px; margin: 0 0 7px; font-weight: 650; }
+.cards .card p { color: var(--dim); font-size: 14.5px; margin: 0; }
+
+.group-title { margin: 34px 0 0; font-size: 15px; color: var(--dim);
+               letter-spacing: 1.6px; text-transform: uppercase; }
+
+/* ---- Weitere Seiten am Artikelende --------------------------------- */
+
+.more { margin-top: 40px; border-top: 1px solid var(--hair); padding-top: 18px; }
+.more h2 { font-size: 15px; color: var(--dim); letter-spacing: 1.6px;
+           text-transform: uppercase; margin: 0 0 10px; }
+.more ul { margin-left: 20px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
