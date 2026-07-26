@@ -1,0 +1,9 @@
+# Vinsieme
+User-agent: *
+Allow: /
+
+# The Flutter app itself renders only after its JS boots and has nothing
+# for a crawler to read; the static pages at the root carry the content.
+Disallow: /app/
+
+Sitemap: https://vinsieme.app/sitemap.xml

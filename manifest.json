@@ -1,11 +1,11 @@
 {
     "name": "Vinsieme",
     "short_name": "Vinsieme",
-    "start_url": ".",
+    "start_url": "/app/",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Vinsieme - Weinkeller-Verwaltung: Bestand, Regale, Trinkfenster und Empfehlungen.",
+    "background_color": "#161519",
+    "theme_color": "#161519",
+    "description": "Weinkeller-App: Etiketten per KI scannen, Flaschen im Regalplan verorten, Trinkreife im Blick behalten.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

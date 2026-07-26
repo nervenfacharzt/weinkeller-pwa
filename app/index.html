@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Weinkeller-App: Etiketten per KI scannen, Flaschen im Regalplan verorten, Trinkreife im Blick behalten. Kostenlos, ohne Werbung und Tracking.">
+
+  <!--
+    Link preview / SEO. A Flutter web app renders only after its JS boots,
+    so crawlers and the link-preview bots behind WhatsApp, Signal, Slack,
+    Discord and X see an empty skeleton and nothing else. Everything they
+    are ever going to show about this app has to live in these static
+    tags - without them the "Weiterempfehlen" share (see recommendMessage
+    in lib/l10n/app_de.arb) arrives as a bare grey URL.
+
+    og:image is web/og-image.jpg, generated from tool/og_image.html via
+    tool/render-og-image.sh - edit the text there, not the JPEG.
+    Absolute URLs are mandatory here: scrapers do not resolve relative
+    paths against the page they fetched.
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vinsieme">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:url" content="https://vinsieme.app/">
+  <meta property="og:title" content="Vinsieme — dein Weinkeller, kartiert">
+  <meta property="og:description" content="Etiketten per KI scannen, Flaschen im Regalplan verorten, Trinkreife im Blick behalten. Kostenlos, ohne Werbung und Tracking.">
+  <meta property="og:image" content="https://vinsieme.app/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vinsieme — Weinkeller-App mit Etikett-Scan, Regalplan und Trinkreife">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vinsieme — dein Weinkeller, kartiert">
+  <meta name="twitter:description" content="Etiketten per KI scannen, Flaschen im Regalplan verorten, Trinkreife im Blick behalten.">
+  <meta name="twitter:image" content="https://vinsieme.app/og-image.jpg">
+
+  <meta name="theme-color" content="#161519">
+  <link rel="canonical" href="https://vinsieme.app/">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Vinsieme">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Vinsieme — dein Weinkeller, kartiert</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!--
+    Structured data: lets search engines render a rich result instead of a
+    bare blue link. SoftwareApplication is the schema.org type Google
+    documents for apps; the offer states free-of-charge explicitly.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Vinsieme",
+    "url": "https://vinsieme.app/",
+    "image": "https://vinsieme.app/og-image.jpg",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Android, Web",
+    "inLanguage": ["de", "en"],
+    "description": "Weinkeller-App: Etiketten per KI scannen, Flaschen im Regalplan verorten, Trinkreife im Blick behalten. Kostenlos, ohne Werbung und Tracking.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Boot screen: paints instantly, removed on flutter-first-frame. -->
+  <style>
+    #boot-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #161519;
+      opacity: 1;
+      transition: opacity 360ms ease-out;
+    }
+    #boot-screen.boot-screen--done {
+      opacity: 0;
+      pointer-events: none;
+    }
+    #boot-screen .mark {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 46px;
+      letter-spacing: -0.5px;
+      color: #EDE7DC;
+      animation: boot-pulse 1.8s ease-in-out infinite;
+    }
+    #boot-screen .mark .vin { color: #D64B5E; }
+    #boot-screen .bar {
+      margin-top: 26px;
+      width: 132px;
+      height: 2px;
+      border-radius: 2px;
+      background: rgba(237, 231, 220, 0.16);
+      overflow: hidden;
+    }
+    #boot-screen .bar::after {
+      content: '';
+      display: block;
+      width: 40%;
+      height: 100%;
+      border-radius: 2px;
+      background: #E2B457;
+      animation: boot-sweep 1.4s ease-in-out infinite;
+    }
+    @keyframes boot-pulse {
+      0%, 100% { opacity: 0.82; }
+      50%      { opacity: 1; }
+    }
+    @keyframes boot-sweep {
+      0%   { transform: translateX(-100%); }
+      100% { transform: translateX(330%); }
+    }
+    /* Respect a reduced-motion preference: keep the screen, drop the
+       movement. */
+    @media (prefers-reduced-motion: reduce) {
+      #boot-screen .mark,
+      #boot-screen .bar::after { animation: none; }
+    }
+  </style>
+  <div id="boot-screen">
+    <div class="mark"><span class="vin">vin</span>sieme</div>
+    <div class="bar"></div>
+  </div>
+  <script>
+    // `flutter-first-frame` is Flutter Web's own signal that the app has
+    // painted. The timeout is a safety net: if that event never arrives
+    // (an older engine, a boot failure), the boot screen must not sit
+    // there forever hiding whatever did render.
+    (function () {
+      var removed = false;
+      function dismiss() {
+        if (removed) return;
+        removed = true;
+        var el = document.getElementById('boot-screen');
+        if (!el) return;
+        el.classList.add('boot-screen--done');
+        setTimeout(function () { el.remove(); }, 400);
+      }
+      window.addEventListener('flutter-first-frame', dismiss);
+      setTimeout(dismiss, 12000);
+
+      // Web push (drink-window reminders): our own worker, registered once
+      // Flutter is up. Flutter's `flutter_service_worker.js` is a
+      // deprecated stub that unregisters itself on activate, so push
+      // handlers appended to it silently stopped working — see
+      // web/push-worker.js.
+      function registerPushWorker() {
+        if (!('serviceWorker' in navigator)) return;
+        navigator.serviceWorker.register('/push-worker.js', { scope: '/' })
+          .catch(function () { /* push simply stays unavailable */ });
+      }
+      window.addEventListener('flutter-first-frame', function () {
+        setTimeout(registerPushWorker, 1500);
+      });
+    })();
+  </script>
+
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script>
+    // Auto-apply deployed updates: Flutter's service worker downloads a new
+    // app version in the background but keeps serving the old one until the
+    // next full reload - users had to reload twice to see deploys. When the
+    // new worker takes control, reload once automatically. The hadController
+    // guard skips the very first install (no old version to replace), and
+    // the sessionStorage flag prevents any reload loop.
+    if ('serviceWorker' in navigator) {
+      const hadController = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!hadController) return;
+        if (sessionStorage.getItem('sw-reloaded') === '1') return;
+        sessionStorage.setItem('sw-reloaded', '1');
+        window.location.reload();
+      });
+      window.addEventListener('load', () => {
+        setTimeout(() => sessionStorage.removeItem('sw-reloaded'), 10000);
+      });
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
