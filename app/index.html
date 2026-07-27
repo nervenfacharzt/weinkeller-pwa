@@ -171,6 +171,22 @@
       window.addEventListener('flutter-first-frame', dismiss);
       setTimeout(dismiss, 12000);
 
+      // Installationsangebot: `beforeinstallprompt` feuert lange bevor
+      // Flutter geladen hat, deshalb wird das Ereignis hier abgefangen und
+      // auf `window` abgelegt. Die App liest es spaeter aus
+      // (lib/src/util/install_offer_web.dart) und loest den Dialog aus,
+      // wenn der Nutzer darauf tippt -- ohne echte Nutzeraktion verwirft
+      // der Browser den Aufruf.
+      window.addEventListener('beforeinstallprompt', function (event) {
+        // Verhindert den eigenen Balken des Browsers; wir fragen an einer
+        // Stelle, die zum Ablauf passt.
+        event.preventDefault();
+        window.__vinsiemeInstallPrompt = event;
+      });
+      window.addEventListener('appinstalled', function () {
+        window.__vinsiemeInstallPrompt = null;
+      });
+
       // Web push (drink-window reminders): our own worker, registered once
       // Flutter is up. Flutter's `flutter_service_worker.js` is a
       // deprecated stub that unregisters itself on activate, so push
