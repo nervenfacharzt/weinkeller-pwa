@@ -49095,7 +49095,7 @@ $S:3}
 A.bwK.prototype={
 $1(a){var s=A.fN().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/83675ed27633283e7fc296c8bca22e841224c096/":s)+a},
+return(s==null?"canvaskit/":s)+a},
 $S:17}
 A.aaw.prototype={
 gt(a){var s=this.a
@@ -170320,7 +170320,7 @@ s=A.H(p).ok.Q
 if(s==null)s=j
 else{r=A.H(p).ax
 p=r.rx
-s=s.bE(p==null?r.k3:p)}q.push(A.dB(A.ju(j,A.z("Version 2026-07-27.0822",B.bwD,j,j,j,j,s,j,j),B.ax,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,i.gaZu(),j,j,j,j,j,j,!1,B.cG),j,j))
+s=s.bE(p==null?r.k3:p)}q.push(A.dB(A.ju(j,A.z("Version 2026-07-27.0848",B.bwD,j,j,j,j,s,j,j),B.ax,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,i.gaZu(),j,j,j,j,j,j,!1,B.cG),j,j))
 q.push(B.cj)
 return A.hx(q,B.bR,j,B.aC,!1)},
 $S:1151}
@@ -171436,7 +171436,7 @@ a2=a1.rx
 a5=a2==null
 h.push(A.dB(A.z(g,B.byS,a7,a7,a7,a7,A.ft(a7,a7,a5?a1.k3:a2,a7,a7,a7,a7,a7,a8,a7,a7,11,a7,a7,a7,a7,a7,!0,a7,1.5,a7,a7,a7,a7,a7,a7),a7,a7),a7,a7))
 h.push(B.aU)
-h.push(A.dB(A.z("Build 2026-07-27.0822",B.bwC,a7,a7,a7,a7,A.ft(a7,a7,(a5?a1.k3:a2).dF(0.6),a7,a7,a7,a7,a7,a8,a7,a7,9,a7,a7,a7,a7,a7,!0,a7,1.2,a7,a7,a7,a7,a7,a7),a7,a7),a7,a7))
+h.push(A.dB(A.z("Build 2026-07-27.0848",B.bwC,a7,a7,a7,a7,A.ft(a7,a7,(a5?a1.k3:a2).dF(0.6),a7,a7,a7,a7,a7,a8,a7,a7,9,a7,a7,a7,a7,a7,!0,a7,1.2,a7,a7,a7,a7,a7,a7),a7,a7),a7,a7))
 h.push(B.fw)
 g=a9.gRO()
 h.push(A.bV(A.b([new A.XO(g,new A.b4p(b0),B.bxb),A.z(" \xb7 ",a7,a7,a7,a7,a7,A.ft(a7,a7,(a5?a1.k3:a2).dF(0.6),a7,a7,a7,a7,a7,a7,a7,a7,10,a7,a7,a7,a7,a7,!0,a7,a7,a7,a7,a7,a7,a7,a7),a7,a7),new A.XO(a9.gTg(),new A.b4q(b0),B.bxc)],m),B.Y,a7,B.jr,B.Q,0,a7))
@@ -174229,7 +174229,7 @@ s=s.length!==0?B.h.gX(s).a:""
 return this.a.$2(s,a.b===2)},
 $S:1200}
 A.byy.prototype={
-$1(a){return"2026-07-27.0822"},
+$1(a){return"2026-07-27.0848"},
 $S:351}
 A.bDc.prototype={
 $1(a){return!1},

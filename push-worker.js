@@ -74,6 +74,43 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+// Nachtragen, was der Worker beim ERSTEN Besuch verpasst hat.
+//
+// `clients.claim()` uebernimmt die bereits laufende Seite, aber Anfragen,
+// die davor schon unterwegs waren, sind am `fetch`-Handler vorbei. Genau
+// das trifft das groesste Stueck: canvaskit.wasm wird ganz frueh beim
+// Booten geholt, lange bevor der Worker aktiv ist. Ohne dieses Nachtragen
+// laege es erst ab dem ZWEITEN Besuch im Cache -- wer einmal reinschaut
+// und danach offline geht, saehe die Fehlerseite.
+//
+// Welche CanvasKit-Variante der Browser genommen hat, weiss nur die Seite
+// (Chromium laedt eine andere als Firefox/Safari). Sie schickt die URLs
+// deshalb selbst herueber; blind alle Varianten vorzuladen waere ein
+// Vielfaches an Daten fuer alle.
+self.addEventListener('message', (event) => {
+  const urls = event.data && event.data.warm;
+  if (!Array.isArray(urls)) return;
+  event.waitUntil(
+    caches.open(CACHE).then((cache) =>
+      Promise.all(urls.map(async (url) => {
+        try {
+          if (new URL(url, self.location.origin).origin !== self.location.origin) return;
+          if (await cache.match(url)) return;
+          // Ohne `cache: 'reload'`: hier ist der HTTP-Cache erwuenscht,
+          // die Datei liegt ja gerade erst darin. Sonst laedt jeder erste
+          // Besuch mehrere Megabyte ein zweites Mal.
+          const response = await fetch(url);
+          if (response && response.ok && response.type === 'basic') {
+            await cache.put(url, response);
+          }
+        } catch (_) {
+          // Nachtragen ist eine Verbesserung, keine Voraussetzung.
+        }
+      }))
+    )
+  );
+});
+
 /// Was ueberhaupt zwischengespeichert werden darf.
 ///
 /// Ausgeschlossen bleiben: fremde Hosts (Supabase, PowerSync -- deren

@@ -195,7 +195,29 @@
       function registerPushWorker() {
         if (!('serviceWorker' in navigator)) return;
         navigator.serviceWorker.register('/push-worker.js', { scope: '/' })
+          .then(warmEngineCache)
           .catch(function () { /* push simply stays unavailable */ });
+      }
+
+      // Dem Worker sagen, welche Engine-Dateien diese Seite geladen hat.
+      //
+      // Beim ersten Besuch sind canvaskit.js/.wasm laengst unterwegs,
+      // bevor der Worker die Seite uebernimmt — sie gingen an seinem
+      // fetch-Handler vorbei und fehlten im Offline-Cache. Welche
+      // Variante es war, weiss nur der Browser selbst (Chromium laedt
+      // eine andere als Firefox), deshalb wird sie hier aus der
+      // Resource-Timing-Liste abgelesen statt im Worker geraten.
+      function warmEngineCache() {
+        navigator.serviceWorker.ready.then(function (registration) {
+          if (!registration.active || !window.performance) return;
+          var urls = performance.getEntriesByType('resource')
+            .map(function (entry) { return entry.name; })
+            .filter(function (name) {
+              return name.indexOf(location.origin) === 0 &&
+                     /canvaskit[^?]*\.(wasm|js)$/.test(name);
+            });
+          if (urls.length) registration.active.postMessage({ warm: urls });
+        }).catch(function () { /* Nachtragen ist optional */ });
       }
       // Sofort registrieren, nicht mehr verzoegert nach dem ersten Frame:
       // seit tool/deploy-pwa.sh Flutters eigenen Service Worker
@@ -203,6 +225,11 @@
       // ersetzen koennte -- und je frueher der Worker steht, desto eher
       // traegt er einen Kaltstart ohne Verbindung.
       registerPushWorker();
+      // Ein zweites Mal, wenn die Seite fertig geladen ist: beim ersten
+      // Aufruf kann die Engine noch unterwegs sein und taucht dann in der
+      // Resource-Timing-Liste gar nicht auf. Doppelt schadet nicht, der
+      // Worker ueberspringt, was schon im Cache liegt.
+      window.addEventListener('load', warmEngineCache);
     })();
   </script>
 
