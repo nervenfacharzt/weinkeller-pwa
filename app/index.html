@@ -181,9 +181,12 @@
         navigator.serviceWorker.register('/push-worker.js', { scope: '/' })
           .catch(function () { /* push simply stays unavailable */ });
       }
-      window.addEventListener('flutter-first-frame', function () {
-        setTimeout(registerPushWorker, 1500);
-      });
+      // Sofort registrieren, nicht mehr verzoegert nach dem ersten Frame:
+      // seit tool/deploy-pwa.sh Flutters eigenen Service Worker
+      // abschaltet, gibt es niemanden mehr, der uns im selben Scope
+      // ersetzen koennte -- und je frueher der Worker steht, desto eher
+      // traegt er einen Kaltstart ohne Verbindung.
+      registerPushWorker();
     })();
   </script>
 
