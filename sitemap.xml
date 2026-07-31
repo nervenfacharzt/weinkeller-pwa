@@ -25,6 +25,13 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://vinsieme.app/wissen/trinkfenster-bestimmen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/trinkfenster-bestimmen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/drinking-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/trinkfenster-bestimmen.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/blaufraenkisch-trinkreife.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/blaufrankisch-aging.html"/>
@@ -85,6 +92,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/weinkeller-app-vergleich.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/wine-cellar-apps-compared.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/weinkeller-app-vergleich.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/drinking-windows.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/trinkfenster-bestimmen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/drinking-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/trinkfenster-bestimmen.html"/>
     <priority>0.6</priority>
   </url>
   <url>
