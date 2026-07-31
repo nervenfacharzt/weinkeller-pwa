@@ -60,11 +60,25 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://vinsieme.app/wissen/geoeffneter-wein-haltbarkeit.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/geoeffneter-wein-haltbarkeit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/how-long-does-opened-wine-last.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/geoeffneter-wein-haltbarkeit.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://vinsieme.app/guides/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/"/>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/guides/how-long-does-opened-wine-last.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/wissen/geoeffneter-wein-haltbarkeit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/guides/how-long-does-opened-wine-last.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/wissen/geoeffneter-wein-haltbarkeit.html"/>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://vinsieme.app/guides/setting-up-a-wine-cellar.html</loc>
