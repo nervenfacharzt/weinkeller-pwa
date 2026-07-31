@@ -166,6 +166,25 @@ th { color: var(--dim); font-weight: 600; }
            text-transform: uppercase; margin: 0 0 10px; }
 .more ul { margin-left: 20px; }
 
+/* ---- Händlerangebot ------------------------------------------------ */
+
+/* Steht nur auf den wenigen Seiten, für die ein Angebot tatsächlich
+   belegt ist, und ist bewusst als Kasten abgesetzt: Der Leser soll auf
+   einen Blick sehen, wo die redaktionelle Angabe aufhört und die
+   bezahlte Verlinkung anfängt. */
+.offer {
+  margin-top: 34px; padding: 18px 20px; border-radius: 14px;
+  background: var(--card); border: 1px solid var(--hair);
+}
+.offer h2 { margin-top: 0; font-size: 16px; }
+.offer p { font-size: 14.5px; }
+.offer .cta {
+  display: inline-block; margin-top: 4px; padding: 9px 16px;
+  border-radius: 999px; background: var(--wine); color: #fff;
+  text-decoration: none; font-size: 14.5px; font-weight: 600;
+}
+.offer .fineprint { color: var(--dim); font-size: 13px; }
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
