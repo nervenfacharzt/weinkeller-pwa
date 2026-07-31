@@ -347,10 +347,10 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html"/>
+    <loc>https://vinsieme.app/weine/anselmo-mendes-muros-antigos-escolha-2025.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/anselmo-mendes-muros-antigos-escolha-2025.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/anselmo-mendes-muros-antigos-escolha-2025.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/anselmo-mendes-muros-antigos-escolha-2025.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -620,13 +620,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/chateau-beau-sejour-becot-instant-de-becot-2018.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-beau-sejour-becot-instant-de-becot-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-beau-sejour-becot-instant-de-becot-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/chateau-beau-sejour-becot-instant-de-becot-2018.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/weine/chateau-begadanet-medoc-ac-cru-bourgeois-2022.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-begadanet-medoc-ac-cru-bourgeois-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-begadanet-medoc-ac-cru-bourgeois-2022.html"/>
@@ -886,10 +879,10 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/chateau-rieussec-carmes-de-rieussec-2022.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-rieussec-carmes-de-rieussec-2022.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-rieussec-carmes-de-rieussec-2022.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/chateau-rieussec-carmes-de-rieussec-2022.html"/>
+    <loc>https://vinsieme.app/weine/chateau-rieussec-les-carmes-de-rieussec-2022.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-rieussec-les-carmes-de-rieussec-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-rieussec-les-carmes-de-rieussec-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/chateau-rieussec-les-carmes-de-rieussec-2022.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -967,6 +960,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/der-gluecksjaeger-riesling-trocken-2025.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/der-gluecksjaeger-riesling-trocken-2025.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/der-gluecksjaeger-riesling-trocken-2025.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/weine/descendientes-de-j-palacios-las-lamas-2022.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/descendientes-de-j-palacios-las-lamas-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/descendientes-de-j-palacios-las-lamas-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/descendientes-de-j-palacios-las-lamas-2022.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -1285,13 +1285,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/finca-ses-talaioles-talvin-white-2024.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/finca-ses-talaioles-talvin-white-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/finca-ses-talaioles-talvin-white-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/finca-ses-talaioles-talvin-white-2024.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/weine/fontanafredda-barolo-serralunga-d-alba-2020.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/fontanafredda-barolo-serralunga-d-alba-2020.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/fontanafredda-barolo-serralunga-d-alba-2020.html"/>
@@ -1530,13 +1523,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/weine/heinrich-pinot-freyheit-2023.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/heinrich-pinot-freyheit-2023.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/heinrich-pinot-freyheit-2023.html"/>
@@ -1761,13 +1747,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/mack-schuehle-blaufraenkisch-classic-2018.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/mack-schuehle-blaufraenkisch-classic-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/mack-schuehle-blaufraenkisch-classic-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/mack-schuehle-blaufraenkisch-classic-2018.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/weine/maison-grandeau-lauduc-l-invincible-2022.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/maison-grandeau-lauduc-l-invincible-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/maison-grandeau-lauduc-l-invincible-2022.html"/>
@@ -1842,6 +1821,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/michi-lorenz-supernova-bio-2020.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/michi-lorenz-supernova-bio-2020.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/michi-lorenz-supernova-bio-2020.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/weine/miguel-torres-chile-manso-de-velasco-2020.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/miguel-torres-chile-manso-de-velasco-2020.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/miguel-torres-chile-manso-de-velasco-2020.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/miguel-torres-chile-manso-de-velasco-2020.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -2076,6 +2062,13 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://vinsieme.app/weine/raats-family-wines-mr-de-compostella-2022.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/raats-family-wines-mr-de-compostella-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/raats-family-wines-mr-de-compostella-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/raats-family-wines-mr-de-compostella-2022.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://vinsieme.app/weine/rapaura-springs-reserve-chardonnay-2022.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/rapaura-springs-reserve-chardonnay-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/rapaura-springs-reserve-chardonnay-2022.html"/>
@@ -2136,6 +2129,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/robert-mondavi-vint-cabernet-sauvignon-aged-in-bourbon-barrels-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/robert-mondavi-vint-cabernet-sauvignon-aged-in-bourbon-barrels-2022.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/robert-mondavi-vint-cabernet-sauvignon-aged-in-bourbon-barrels-2022.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/weine/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -2283,6 +2283,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/taylor-s-vintage-port-2017.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/taylor-s-vintage-port-2017.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/taylor-s-vintage-port-2017.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/weine/teck-blaufraenkisch-classic-2018.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/teck-blaufraenkisch-classic-2018.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/teck-blaufraenkisch-classic-2018.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/teck-blaufraenkisch-classic-2018.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -2741,13 +2748,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/weine/weingut-pittnauer-r-b-2024.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/weingut-pittnauer-r-b-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/weingut-pittnauer-r-b-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/weingut-pittnauer-r-b-2024.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/weine/weingut-prager-riesling-klaus-smaragd-2018.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/weingut-prager-riesling-klaus-smaragd-2018.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/weingut-prager-riesling-klaus-smaragd-2018.html"/>
@@ -2937,10 +2937,10 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/wines/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/andreas-oster-weinkellerei-nostro-nastro-toscana-rosso-2021.html"/>
+    <loc>https://vinsieme.app/wines/anselmo-mendes-muros-antigos-escolha-2025.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/anselmo-mendes-muros-antigos-escolha-2025.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/anselmo-mendes-muros-antigos-escolha-2025.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/anselmo-mendes-muros-antigos-escolha-2025.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -3210,13 +3210,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/wines/chateau-beau-sejour-becot-instant-de-becot-2018.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-beau-sejour-becot-instant-de-becot-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-beau-sejour-becot-instant-de-becot-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/chateau-beau-sejour-becot-instant-de-becot-2018.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/wines/chateau-begadanet-medoc-ac-cru-bourgeois-2022.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-begadanet-medoc-ac-cru-bourgeois-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-begadanet-medoc-ac-cru-bourgeois-2022.html"/>
@@ -3476,10 +3469,10 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/wines/chateau-rieussec-carmes-de-rieussec-2022.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-rieussec-carmes-de-rieussec-2022.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-rieussec-carmes-de-rieussec-2022.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/chateau-rieussec-carmes-de-rieussec-2022.html"/>
+    <loc>https://vinsieme.app/wines/chateau-rieussec-les-carmes-de-rieussec-2022.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/chateau-rieussec-les-carmes-de-rieussec-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/chateau-rieussec-les-carmes-de-rieussec-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/chateau-rieussec-les-carmes-de-rieussec-2022.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -3557,6 +3550,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/der-gluecksjaeger-riesling-trocken-2025.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/der-gluecksjaeger-riesling-trocken-2025.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/der-gluecksjaeger-riesling-trocken-2025.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wines/descendientes-de-j-palacios-las-lamas-2022.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/descendientes-de-j-palacios-las-lamas-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/descendientes-de-j-palacios-las-lamas-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/descendientes-de-j-palacios-las-lamas-2022.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -3875,13 +3875,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/wines/finca-ses-talaioles-talvin-white-2024.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/finca-ses-talaioles-talvin-white-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/finca-ses-talaioles-talvin-white-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/finca-ses-talaioles-talvin-white-2024.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/wines/fontanafredda-barolo-serralunga-d-alba-2020.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/fontanafredda-barolo-serralunga-d-alba-2020.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/fontanafredda-barolo-serralunga-d-alba-2020.html"/>
@@ -4120,13 +4113,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/wines/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/hanseatisches-wein-und-sekt-kontor-coastal-ridge-riesling-2021.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/wines/heinrich-pinot-freyheit-2023.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/heinrich-pinot-freyheit-2023.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/heinrich-pinot-freyheit-2023.html"/>
@@ -4351,13 +4337,6 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://vinsieme.app/wines/mack-schuehle-blaufraenkisch-classic-2018.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/mack-schuehle-blaufraenkisch-classic-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/mack-schuehle-blaufraenkisch-classic-2018.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/mack-schuehle-blaufraenkisch-classic-2018.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://vinsieme.app/wines/maison-grandeau-lauduc-l-invincible-2022.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/maison-grandeau-lauduc-l-invincible-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/maison-grandeau-lauduc-l-invincible-2022.html"/>
@@ -4432,6 +4411,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/michi-lorenz-supernova-bio-2020.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/michi-lorenz-supernova-bio-2020.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/michi-lorenz-supernova-bio-2020.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wines/miguel-torres-chile-manso-de-velasco-2020.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/miguel-torres-chile-manso-de-velasco-2020.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/miguel-torres-chile-manso-de-velasco-2020.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/miguel-torres-chile-manso-de-velasco-2020.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -4666,6 +4652,13 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://vinsieme.app/wines/raats-family-wines-mr-de-compostella-2022.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/raats-family-wines-mr-de-compostella-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/raats-family-wines-mr-de-compostella-2022.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/raats-family-wines-mr-de-compostella-2022.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://vinsieme.app/wines/rapaura-springs-reserve-chardonnay-2022.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/rapaura-springs-reserve-chardonnay-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/rapaura-springs-reserve-chardonnay-2022.html"/>
@@ -4726,6 +4719,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/robert-mondavi-vint-cabernet-sauvignon-aged-in-bourbon-barrels-2022.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/robert-mondavi-vint-cabernet-sauvignon-aged-in-bourbon-barrels-2022.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/robert-mondavi-vint-cabernet-sauvignon-aged-in-bourbon-barrels-2022.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wines/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/robert-mondavi-winery-the-reserve-cabernet-sauvignon-to-kalon-vineyard-2017.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -4873,6 +4873,13 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/taylor-s-vintage-port-2017.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/taylor-s-vintage-port-2017.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/taylor-s-vintage-port-2017.html"/>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://vinsieme.app/wines/teck-blaufraenkisch-classic-2018.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/teck-blaufraenkisch-classic-2018.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/teck-blaufraenkisch-classic-2018.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/teck-blaufraenkisch-classic-2018.html"/>
     <priority>0.4</priority>
   </url>
   <url>
@@ -5328,13 +5335,6 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/weingut-maximin-gruenhaus-gruenhaeuser-pinot-noir-1g-trocken-2023.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/weingut-maximin-gruenhaus-gruenhaeuser-pinot-noir-1g-trocken-2023.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/weingut-maximin-gruenhaus-gruenhaeuser-pinot-noir-1g-trocken-2023.html"/>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://vinsieme.app/wines/weingut-pittnauer-r-b-2024.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://vinsieme.app/weine/weingut-pittnauer-r-b-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinsieme.app/wines/weingut-pittnauer-r-b-2024.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vinsieme.app/weine/weingut-pittnauer-r-b-2024.html"/>
     <priority>0.4</priority>
   </url>
   <url>
