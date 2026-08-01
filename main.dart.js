@@ -161904,7 +161904,7 @@ var $async$FD=A.d(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:h=null
 try{j=$.dA().b
 j===$&&A.a()
-h=j.gf5().e.a}catch(f){h=null}if(h==null)throw A.j(B.bqY)
+h=j.gf5().e.a}catch(f){h=null}if(h==null)throw A.j(B.bqX)
 m=null
 p=4
 j=$.dA().b
@@ -161937,14 +161937,16 @@ break}catch(f){if(t.bE.b(A.V(f)))throw A.j(B.xE)
 else throw f}case 1:return A.f(q,r)
 case 2:return A.e(o.at(-1),r)}})
 return A.h($async$FD,r)},
-aOF(a){var s,r,q=a.a
-if(q===401||q===403)return new A.de(B.eE,!1,u.N+q+"). Bitte Anmeldung pr\xfcfen.",null)
-if(q===429)return new A.de(B.eg,!0,"Tageslimit f\xfcr Scans erreicht. Bitte morgen erneut versuchen oder einen eigenen Anthropic API-Key in den Einstellungen hinterlegen.",A.bJA(a.b))
-if(q>=500){s=a.b
+aOF(a){var s,r,q="error",p=a.a
+if(p===401||p===403)return new A.de(B.eE,!1,u.N+p+"). Bitte Anmeldung pr\xfcfen.",null)
+if(p===429)return new A.de(B.eg,!0,"Tageslimit f\xfcr Scans erreicht. Bitte morgen erneut versuchen oder einen eigenen Anthropic API-Key in den Einstellungen hinterlegen.",A.bJA(a.b))
+if(p>=500){s=a.b
 r=t.f.b(s)
-if(r&&J.l(s.i(0,"error"),"scan_service_not_configured"))return B.bqR
-if(r&&J.l(s.i(0,"error"),"ai_budget"))return B.bqP
-return new A.de(B.dE,!0,u.W+q+").",null)}return new A.de(B.jP,!1,u.c2+q+").",null)},
+if(r&&J.l(s.i(0,q),"scan_service_not_configured"))return B.bqQ
+if(r)r=J.l(s.i(0,q),"ai_budget")||J.l(s.i(0,q),"ai_unavailable")
+else r=!1
+if(r)return B.bqZ
+return new A.de(B.dE,!0,u.W+p+").",null)}return new A.de(B.jP,!1,u.c2+p+").",null)},
 $iJE:1,
 $ibao:1}
 A.aNQ.prototype={
@@ -162025,7 +162027,7 @@ var $async$DP=A.d(function(a0,a1){if(a0===1){o.push(a1)
 s=p}for(;;)switch(s){case 0:h=null
 try{k=$.dA().b
 k===$&&A.a()
-h=k.gf5().e.a}catch(f){h=null}if(h==null)throw A.j(B.bqT)
+h=k.gf5().e.a}catch(f){h=null}if(h==null)throw A.j(B.bqS)
 m=null
 p=4
 k=$.dA().b
@@ -162043,14 +162045,14 @@ g=o.pop()
 k=A.V(g)
 if(k instanceof A.nN)throw A.j(B.br_)
 else if(k instanceof A.rV){l=k
-throw A.j(n.aXn(l))}else if(t.VI.b(k))throw A.j(B.bqW)
+throw A.j(n.aXn(l))}else if(t.VI.b(k))throw A.j(B.bqV)
 else throw g
 s=6
 break
 case 3:s=2
 break
 case 6:i=m.a
-if(!t.f.b(i))throw A.j(B.bqZ)
+if(!t.f.b(i))throw A.j(B.bqY)
 q=A.bHV(A.dY(i,t.N,t.z))
 s=1
 break
@@ -162088,7 +162090,7 @@ s=1
 break}m=null
 try{a0=$.dA().b
 a0===$&&A.a()
-m=a0.gf5().e.a}catch(a5){m=null}if(m==null)throw A.j(B.bqS)
+m=a0.gf5().e.a}catch(a5){m=null}if(m==null)throw A.j(B.bqR)
 l=null
 p=4
 a0=$.dA().b
@@ -162104,21 +162106,21 @@ break
 case 4:p=3
 a2=o.pop()
 b=A.V(a2)
-if(b instanceof A.nN)throw A.j(B.bqX)
+if(b instanceof A.nN)throw A.j(B.bqW)
 else if(b instanceof A.rV){k=b
 j=k.a
 if(J.l(j,401)||J.l(j,403))b=B.eE
 else b=J.l(j,429)?B.eg:B.dE
 a=A.r(j)
 a0=!J.l(j,401)&&!J.l(j,403)
-throw A.j(A.afv(b,"\xdcbersetzungsdienst antwortete mit "+a+".",null,a0))}else if(t.VI.b(b))throw A.j(B.bqQ)
+throw A.j(A.afv(b,"\xdcbersetzungsdienst antwortete mit "+a+".",null,a0))}else if(t.VI.b(b))throw A.j(B.bqP)
 else throw a2
 s=6
 break
 case 3:s=2
 break
 case 6:h=l.a
-if(!t.f.b(h))throw A.j(B.bqV)
+if(!t.f.b(h))throw A.j(B.bqU)
 g=A.v(b,a)
 for(b=t.j,a=t.s,f=0;f<4;++f){e=B.bgf[f]
 d=h.i(0,e)
@@ -170576,7 +170578,7 @@ s=A.H(p).ok.Q
 if(s==null)s=j
 else{r=A.H(p).ax
 p=r.rx
-s=s.bE(p==null?r.k3:p)}q.push(A.dF(A.ju(j,A.z("Version 2026-08-01.1103",B.bCi,j,j,j,j,s,j,j),B.ay,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,i.gaZC(),j,j,j,j,j,j,!1,B.cG),j,j))
+s=s.bE(p==null?r.k3:p)}q.push(A.dF(A.ju(j,A.z("Version 2026-08-01.1132",B.bCi,j,j,j,j,s,j,j),B.ay,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,i.gaZC(),j,j,j,j,j,j,!1,B.cG),j,j))
 q.push(B.cj)
 return A.hz(q,B.bQ,j,B.aC,!1)},
 $S:1157}
@@ -171698,7 +171700,7 @@ a3=f.rx
 a4=a3==null
 g.push(A.dF(A.z(n,B.bEx,a9,a9,a9,a9,A.h4(a9,a9,a4?f.k3:a3,a9,a9,a9,a9,a9,b0,a9,a9,11,a9,a9,a9,a9,a9,!0,a9,1.5,a9,a9,a9,a9,a9,a9),a9,a9),a9,a9))
 g.push(B.aU)
-g.push(A.dF(A.z("Build 2026-08-01.1103",B.bCh,a9,a9,a9,a9,A.h4(a9,a9,(a4?f.k3:a3).du(0.6),a9,a9,a9,a9,a9,b0,a9,a9,9,a9,a9,a9,a9,a9,!0,a9,1.2,a9,a9,a9,a9,a9,a9),a9,a9),a9,a9))
+g.push(A.dF(A.z("Build 2026-08-01.1132",B.bCh,a9,a9,a9,a9,A.h4(a9,a9,(a4?f.k3:a3).du(0.6),a9,a9,a9,a9,a9,b0,a9,a9,9,a9,a9,a9,a9,a9,!0,a9,1.2,a9,a9,a9,a9,a9,a9),a9,a9),a9,a9))
 g.push(B.fA)
 n=b1.gRO()
 g.push(A.jR(B.a1D,A.b([new A.XR(n,new A.b4A(b2),B.bCR),A.z(" \xb7 ",a9,a9,a9,a9,a9,A.h4(a9,a9,(a4?f.k3:a3).du(0.6),a9,a9,a9,a9,a9,a9,a9,a9,10,a9,a9,a9,a9,a9,!0,a9,a9,a9,a9,a9,a9,a9,a9),a9,a9),new A.XR(b1.gTg(),new A.b4B(b2),B.bCS)],l),B.z4,0,0))
@@ -173254,7 +173256,7 @@ p=5
 s=8
 return A.c(a5.aC($.a2L().gfa(),t.s3),$async$xJ)
 case 8:j=b6
-if(j==null)throw A.j(B.bqU)
+if(j==null)throw A.j(B.bqT)
 i=null
 p=9
 a4=m.gfO()
@@ -174496,7 +174498,7 @@ s=s.length!==0?B.h.gX(s).a:""
 return this.a.$2(s,a.b===2)},
 $S:1206}
 A.byO.prototype={
-$1(a){return"2026-08-01.1103"},
+$1(a){return"2026-08-01.1132"},
 $S:351}
 A.bDu.prototype={
 $1(a){return!1},
@@ -187031,19 +187033,19 @@ B.eE=new A.BR(1,"auth")
 B.eg=new A.BR(2,"rateLimited")
 B.dE=new A.BR(3,"network")
 B.jP=new A.BR(5,"other")
-B.bqP=new A.de(B.jP,!1,"Die KI-Funktionen sind vor\xfcbergehend abgeschaltet, weil das Kostenbudget aufgebraucht ist. Du kannst den Wein weiterhin von Hand erfassen, oder in den Einstellungen einen eigenen Anthropic API-Key hinterlegen.",null)
-B.bqQ=new A.de(B.dE,!0,"Netzwerkfehler beim Aufruf des \xdcbersetzungsdienstes.",null)
-B.bqR=new A.de(B.jP,!1,"Der Scan-Dienst ist serverseitig nicht konfiguriert (fehlender API-Key).",null)
+B.bqP=new A.de(B.dE,!0,"Netzwerkfehler beim Aufruf des \xdcbersetzungsdienstes.",null)
+B.bqQ=new A.de(B.jP,!1,"Der Scan-Dienst ist serverseitig nicht konfiguriert (fehlender API-Key).",null)
 B.ZU=new A.de(B.dE,!0,"Zeit\xfcberschreitung beim Aufruf des Scan-Dienstes.",null)
-B.bqS=new A.de(B.eE,!1,"Kein angemeldeter Nutzer - der Uebersetzungsdienst erfordert einen Login.",null)
-B.bqT=new A.de(B.eE,!1,"Kein angemeldeter Nutzer - der Recherche-Dienst erfordert einen Login.",null)
-B.bqU=new A.de(B.jP,!1,"Kein Sync-Backend konfiguriert - der Recherche-Dienst ist nicht verf\xfcgbar.",null)
+B.bqR=new A.de(B.eE,!1,"Kein angemeldeter Nutzer - der Uebersetzungsdienst erfordert einen Login.",null)
+B.bqS=new A.de(B.eE,!1,"Kein angemeldeter Nutzer - der Recherche-Dienst erfordert einen Login.",null)
+B.bqT=new A.de(B.jP,!1,"Kein Sync-Backend konfiguriert - der Recherche-Dienst ist nicht verf\xfcgbar.",null)
 B.xD=new A.BR(4,"unparseable")
-B.bqV=new A.de(B.xD,!1,"Unerwartete Antwort des \xdcbersetzungsdienstes.",null)
-B.bqW=new A.de(B.dE,!0,"Netzwerkfehler beim Aufruf des Recherche-Dienstes.",null)
-B.bqX=new A.de(B.dE,!0,"Zeit\xfcberschreitung beim Aufruf des \xdcbersetzungsdienstes.",null)
-B.bqY=new A.de(B.eE,!1,"Kein angemeldeter Nutzer - der Scan-Dienst erfordert einen Login.",null)
-B.bqZ=new A.de(B.xD,!1,"Die Antwort des Recherche-Dienstes konnte nicht ausgewertet werden.",null)
+B.bqU=new A.de(B.xD,!1,"Unerwartete Antwort des \xdcbersetzungsdienstes.",null)
+B.bqV=new A.de(B.dE,!0,"Netzwerkfehler beim Aufruf des Recherche-Dienstes.",null)
+B.bqW=new A.de(B.dE,!0,"Zeit\xfcberschreitung beim Aufruf des \xdcbersetzungsdienstes.",null)
+B.bqX=new A.de(B.eE,!1,"Kein angemeldeter Nutzer - der Scan-Dienst erfordert einen Login.",null)
+B.bqY=new A.de(B.xD,!1,"Die Antwort des Recherche-Dienstes konnte nicht ausgewertet werden.",null)
+B.bqZ=new A.de(B.jP,!1,"Die KI-Erkennung ist vor\xfcbergehend nicht erreichbar. Du kannst den Wein in der Zwischenzeit von Hand erfassen.",null)
 B.br_=new A.de(B.dE,!0,"Zeit\xfcberschreitung beim Aufruf des Recherche-Dienstes.",null)
 B.xE=new A.de(B.xD,!1,"Die Antwort des Scan-Dienstes konnte nicht ausgewertet werden.",null)
 B.ZV=new A.de(B.dE,!0,"Netzwerkfehler beim Aufruf des Scan-Dienstes.",null)
