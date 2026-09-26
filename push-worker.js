@@ -176,6 +176,9 @@ self.addEventListener('push', (event) => {
       // The app now lives under /app/ (the site root is the landing page),
       // so a tapped reminder must open the app, not the marketing page.
       data: { url: data.url || '/app/' },
+      // Verkostungen (tasting-push, 2026-09-26): eine Meldung je
+      // Verkostung, die neue ersetzt die vorige -- und klingelt trotzdem.
+      ...(data.tag ? { tag: data.tag, renotify: true } : {}),
     })
   );
 });
@@ -189,8 +192,22 @@ self.addEventListener('notificationclick', (event) => {
         type: 'window',
         includeUncontrolled: true,
       });
+      // Ein offenes Fenster auf das Ziel lenken, nicht nur nach vorne
+      // holen: eine Verkostungs-Meldung soll die Verkostung oeffnen
+      // (/app/?verkostung-id=...), nicht die zuletzt offene Seite.
       for (const client of windows) {
-        if ('focus' in client) return client.focus();
+        if ('focus' in client) {
+          if (target !== '/app/' && 'navigate' in client) {
+            try {
+              const moved = await client.navigate(target);
+              return (moved || client).focus();
+            } catch (_) {
+              // Nicht kontrolliertes Fenster: unten ein neues oeffnen.
+              break;
+            }
+          }
+          return client.focus();
+        }
       }
       return self.clients.openWindow(target);
     })()
